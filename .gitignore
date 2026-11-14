@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Project-specific ---
+# Raw dataset stays out of Git until the dataset licence is confirmed
+data/raw/*.csv

@@ -1,0 +1,4 @@
+# Development tools (testing and linting). Not needed on Streamlit Cloud.
+-r requirements.txt
+pytest==9.2.0
+ruff==0.17.5
