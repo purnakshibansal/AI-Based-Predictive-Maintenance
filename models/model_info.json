@@ -1,0 +1,75 @@
+{
+  "model_name": "XGBoost",
+  "selection_reason": "Highest cross-validated PR-AUC (0.778) on the training data. PR-AUC suits rare failures better than accuracy. The choice was made before the test rows were used.",
+  "threshold": 0.1755,
+  "threshold_rule": "maximise F2 on out-of-fold training predictions",
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "machine_types": [
+    "L",
+    "M",
+    "H"
+  ],
+  "random_state": 42,
+  "training_rows": 8000,
+  "training_failures": 271,
+  "training_ranges": {
+    "Air temperature [K]": {
+      "min": 295.3,
+      "max": 304.5
+    },
+    "Process temperature [K]": {
+      "min": 305.7,
+      "max": 313.8
+    },
+    "Rotational speed [rpm]": {
+      "min": 1168.0,
+      "max": 2886.0
+    },
+    "Torque [Nm]": {
+      "min": 3.8,
+      "max": 76.6
+    },
+    "Tool wear [min]": {
+      "min": 0.0,
+      "max": 253.0
+    }
+  },
+  "test_rows": 2000,
+  "test_failures": 68,
+  "test_metrics": {
+    "threshold": 0.1755,
+    "accuracy": 0.976,
+    "balanced_accuracy": 0.8883,
+    "precision": 0.6136,
+    "recall": 0.7941,
+    "f1": 0.6923,
+    "f2": 0.75,
+    "roc_auc": 0.9658,
+    "pr_auc": 0.8267,
+    "tn": 1898,
+    "fp": 34,
+    "fn": 14,
+    "tp": 54
+  },
+  "library_versions": {
+    "python": "3.14.2",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "joblib": "1.6.0"
+  },
+  "created_utc": "2026-11-16T04:05:15+00:00",
+  "notes": [
+    "The failure score is a risk indicator, not a guaranteed probability.",
+    "The model was trained on a synthetic dataset (AI4I 2020).",
+    "The model was trained on the training rows only; test rows were held out."
+  ]
+}
