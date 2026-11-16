@@ -1,0 +1,69 @@
+{
+  "selected_model": "XGBoost",
+  "selection_reason": "Highest cross-validated PR-AUC (0.778) on the training data. PR-AUC suits rare failures better than accuracy. The choice was made before the test rows were used.",
+  "threshold_rule": "maximise F2 on out-of-fold training predictions",
+  "test_rows": 2000,
+  "test_failures": 68,
+  "models": {
+    "Logistic Regression": {
+      "threshold": 0.7806,
+      "accuracy": 0.946,
+      "balanced_accuracy": 0.7734,
+      "precision": 0.3333,
+      "recall": 0.5882,
+      "f1": 0.4255,
+      "f2": 0.5102,
+      "roc_auc": 0.9066,
+      "pr_auc": 0.3798,
+      "tn": 1852,
+      "fp": 80,
+      "fn": 28,
+      "tp": 40
+    },
+    "Decision Tree": {
+      "threshold": 0.9268,
+      "accuracy": 0.9785,
+      "balanced_accuracy": 0.8612,
+      "precision": 0.6667,
+      "recall": 0.7353,
+      "f1": 0.6993,
+      "f2": 0.7205,
+      "roc_auc": 0.891,
+      "pr_auc": 0.7214,
+      "tn": 1907,
+      "fp": 25,
+      "fn": 18,
+      "tp": 50
+    },
+    "Random Forest": {
+      "threshold": 0.135,
+      "accuracy": 0.964,
+      "balanced_accuracy": 0.9033,
+      "precision": 0.4831,
+      "recall": 0.8382,
+      "f1": 0.6129,
+      "f2": 0.7308,
+      "roc_auc": 0.9689,
+      "pr_auc": 0.7702,
+      "tn": 1871,
+      "fp": 61,
+      "fn": 11,
+      "tp": 57
+    },
+    "XGBoost": {
+      "threshold": 0.1755,
+      "accuracy": 0.976,
+      "balanced_accuracy": 0.8883,
+      "precision": 0.6136,
+      "recall": 0.7941,
+      "f1": 0.6923,
+      "f2": 0.75,
+      "roc_auc": 0.9658,
+      "pr_auc": 0.8267,
+      "tn": 1898,
+      "fp": 34,
+      "fn": 14,
+      "tp": 54
+    }
+  }
+}
