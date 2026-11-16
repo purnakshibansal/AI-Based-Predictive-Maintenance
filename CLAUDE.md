@@ -8,7 +8,9 @@ Workspace: GitHub Codespace, /workspaces/AI-Based-Predictive-Maintenance, Python
 - Done and pushed: phases 0-10 (setup, data, packages, structure, preprocessing, EDA,
   training, evaluation, final model + predict.py, all seven dashboard pages).
 - Done: README.md, this file.
-- Remaining: final dashboard review, deployment on Streamlit Community Cloud.
+- Deployed on Streamlit Community Cloud: https://ai-based-predictive-maintenance-5u7aff34e4t6mtluwnr2zo.streamlit.app
+- Repo was made PUBLIC so Cloud can read it (no secrets; data is CC BY 4.0).
+- Remaining: optional polish, report/viva preparation.
 - Tests: 64 pytest tests passing, ruff clean.
 
 ## Key decisions

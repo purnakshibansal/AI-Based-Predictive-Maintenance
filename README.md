@@ -7,6 +7,10 @@ readings, with a seven-page Streamlit dashboard.
 > guaranteed probability**. Predictions support inspection decisions; they do not
 > replace them.
 
+## Live app
+
+https://ai-based-predictive-maintenance-5u7aff34e4t6mtluwnr2zo.streamlit.app
+
 ## What it does
 
 - Predicts failure risk (Low / Medium / High) for one machine or a whole CSV.
