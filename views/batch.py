@@ -64,7 +64,7 @@ if uploaded is not None:
         shown = result[result["risk_level"].isin(levels)].sort_values(
             "failure_score", ascending=False
         )
-        st.dataframe(shown, use_container_width=True, hide_index=True)
+        st.dataframe(shown, width="stretch", hide_index=True)
 
         st.download_button(
             "Download all results (CSV)",

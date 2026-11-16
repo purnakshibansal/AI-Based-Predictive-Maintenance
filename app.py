@@ -13,6 +13,7 @@ navigation = st.navigation(
         st.Page("views/home.py", title="Home", icon="🏠", default=True),
         st.Page("views/prediction.py", title="Prediction", icon="🔮"),
         st.Page("views/batch.py", title="Batch Prediction", icon="📂"),
+        st.Page("views/performance.py", title="Model Performance", icon="📊"),
     ]
 )
 navigation.run()
