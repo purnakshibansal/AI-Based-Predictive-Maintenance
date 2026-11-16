@@ -11,7 +11,7 @@ Run it with:
 
 import json
 import platform
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import joblib
@@ -72,7 +72,7 @@ def build_model_info(
         "test_failures": report["test_failures"],
         "test_metrics": scores,
         "library_versions": library_versions(),
-        "created_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "created_utc": datetime.now(UTC).isoformat(timespec="seconds"),
         "notes": [
             "The failure score is a risk indicator, not a guaranteed probability.",
             "The model was trained on a synthetic dataset (AI4I 2020).",
