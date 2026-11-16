@@ -14,6 +14,7 @@ navigation = st.navigation(
         st.Page("views/prediction.py", title="Prediction", icon="🔮"),
         st.Page("views/batch.py", title="Batch Prediction", icon="📂"),
         st.Page("views/performance.py", title="Model Performance", icon="📊"),
+        st.Page("views/explorer.py", title="Dataset Explorer", icon="🔎"),
     ]
 )
 navigation.run()
